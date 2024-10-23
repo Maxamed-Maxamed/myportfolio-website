@@ -1,4 +1,5 @@
-import { User, Code, Server, Layers, Phone, Award } from 'lucide-react';
+import { Award, Code, User,  Briefcase, Phone, Server, Shield, Database, GitBranch, Layers, Cloud, } from 'lucide-react';
+
 import SkillCard from './SkillCard';
 
 const skillsData = [
@@ -31,6 +32,46 @@ const skillsData = [
     title: "Design & Prototyping Tools",
     icon: <Award size={48} className="text-yellow-500" />,
     skills: ["Figma", "Adobe XD", "Sketch (UI/UX Design)", "InVision (Prototyping)"]
+  },
+  {
+    title: "Databases",
+    icon: <Database size={48} className="text-indigo-500" />,
+    skills: ["SQL", "MySQL", "MongoDB", "Firebase", "PostgreSQL", "Microsoft Excel", "Microsoft Access"]
+  },
+  {
+    title: "Tools & Platforms",
+    icon: <GitBranch size={48} className="text-orange-500" />,
+    skills: ["Git", "GitHub", "Docker", "AWS", "VS Code", "IntelliJ IDEA", "PyCharm IDE", "Postman API Platform"]
+  },
+  {
+    title: "Software Development",
+    icon: <Briefcase size={48} className="text-teal-500" />,
+    skills: ["Agile Methodologies", "Software Lifecycle Management", "Code Reviews", "CI/CD Pipelines", "GitHub Actions"]
+  },
+  {
+    title: "APIs & Web Services",
+    icon: <Server size={48} className="text-pink-500" />,
+    skills: ["GraphQL", "RESTful Services"]
+  },
+  {
+    title: "Testing Frameworks",
+    icon: <Shield size={48} className="text-cyan-500" />,
+    skills: ["Jest (JavaScript)", "Mocha (JavaScript)", "Chai (JavaScript)", "PyTest (Python)", "Selenium (Automated Testing)"]
+  },
+  {
+    title: "Cloud Services",
+    icon: <Cloud size={48} className="text-purple-500" />,
+    skills: ["AWS (EC2, S3, Lambda)", "GCP (Firestore, Compute Engine)", "Microsoft Azure (App Service, Cosmos DB)"]
+  },
+  {
+    title: "Security Practices",
+    icon: <Shield size={48} className="text-red-500" />,
+    skills: ["OAuth2", "JWT", "Secure Coding Practices", "Encryption", "Vulnerability Scanning (OWASP ZAP)"]
+  },
+  {
+    title: "Machine Learning & Data Science",
+    icon: <Award size={48} className="text-red-500" />,
+    skills: ["TensorFlow", "PyTorch", "Scikit-Learn", "Pandas", "Jupyter Notebooks"]
   }
 ];
 
