@@ -18,6 +18,24 @@ const projectsData = [
     description: "Automated security scanning tool",
     tech: ["Python", "Docker", "REST APIs"],
     image: "/VulnerabilityAssessmentTool.jpeg"
+  },
+  {
+    title: "Movie Web Application",
+    description: "React-based movie browsing and rating app",
+    tech: ["React", "Redux", "TMDB API"],
+    image: "/MovieApp.jpeg"
+  },
+  {
+    title: "Real-Time Chat Application",
+    description: "Secure messaging app with end-to-end encryption",
+    tech: ["Socket.io", "React", "Node.js", "MongoDB"],
+    image: "/Chat.jpeg"
+  },
+  {
+    title: "Portfolio Website",
+    description: "Personal portfolio to showcase projects and skills",
+    tech: ["HTML", "CSS", "JavaScript"],
+    image: "/notepad.jpeg"
   }
 ];
 
