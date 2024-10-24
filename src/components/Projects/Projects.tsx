@@ -5,37 +5,37 @@ const projectsData = [
     title: "Hydration Mate",
     description: "Mobile app to track daily water intake",
     tech: ["React Native", "Firebase", "Node.js"],
-    image: "/img.png"
+    image: "/myportfolio-website/img.png"
   },
   {
     title: "E-commerce Platform",
     description: "Full-stack online shopping platform",
     tech: ["React", "Node.js", "MongoDB", "Stripe"],
-    image: "/E-commercePlatform.jpeg"
+    image: "/myportfolio-website/E-commercePlatform.jpeg"
   },
   {
     title: "Vulnerability Assessment Tool",
     description: "Automated security scanning tool",
     tech: ["Python", "Docker", "REST APIs"],
-    image: "/VulnerabilityAssessmentTool.jpeg"
+    image: "/myportfolio-website/VulnerabilityAssessmentTool.jpeg"
   },
   {
     title: "Movie Web Application",
     description: "React-based movie browsing and rating app",
     tech: ["React", "Redux", "TMDB API"],
-    image: "/MovieApp.jpeg"
+    image: "/myportfolio-website/MovieApp.jpeg"
   },
   {
     title: "Real-Time Chat Application",
     description: "Secure messaging app with end-to-end encryption",
     tech: ["Socket.io", "React", "Node.js", "MongoDB"],
-    image: "/Chat.jpeg"
+    image: "/myportfolio-website/Chat.jpeg"
   },
   {
     title: "Portfolio Website",
     description: "Personal portfolio to showcase projects and skills",
     tech: ["HTML", "CSS", "JavaScript"],
-    image: "/notepad.jpeg"
+    image: "/myportfolio-website/notepad.jpeg"
   }
 ];
 

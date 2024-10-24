@@ -24,13 +24,13 @@ const Certificate: React.FC = () => {
       name: "AWS Certified Cloud Practitioner",
       issuer: "Amazon Web Services",
       date: "June 2023",
-      logo: "/aws.png"
+      logo: "/myportfolio-website/aws.png"
     },
     {
       name: "CompTIA Security+ (In Progress)",
       issuer: "CompTIA",
       date: "Expected December 2025",
-      logo: "/CompTIA Security+.png"
+      logo: "/myportfolio-website/CompTIA Security+.png"
     }
   ];
 
