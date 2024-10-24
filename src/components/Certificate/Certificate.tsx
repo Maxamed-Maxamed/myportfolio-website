@@ -23,7 +23,7 @@ const Certificate: React.FC = () => {
     {
       name: "AWS Certified Cloud Practitioner",
       issuer: "Amazon Web Services",
-      date: "June 2023",
+      date: "Issued Sep 2022 · Expires Sep 2025",
       logo: "/myportfolio-website/aws.png"
     },
     {
