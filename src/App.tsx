@@ -6,7 +6,7 @@ import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import './App.css';
-import Certificate from './Certificate/Certificate';
+import Certificate from './components/Certificate/Certificate';
 
 function App() {
   return (
