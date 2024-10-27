@@ -5,37 +5,43 @@ const projectsData = [
     title: "Hydration Mate",
     description: "Mobile app to track daily water intake",
     tech: ["React Native", "Firebase", "Node.js"],
-    image: "/myportfolio-website/img.png"
+    image: "/myportfolio-website/img.png",
+    url: "https://github.com/Maxamed-Maxamed"
   },
   {
     title: "E-commerce Platform",
     description: "Full-stack online shopping platform",
     tech: ["React", "Node.js", "MongoDB", "Stripe"],
-    image: "/myportfolio-website/E-commercePlatform.jpeg"
+    image: "/myportfolio-website/E-commercePlatform.jpeg",
+    url: "https://github.com/Maxamed-Maxamed"
   },
   {
     title: "Vulnerability Assessment Tool",
     description: "Automated security scanning tool",
     tech: ["Python", "Docker", "REST APIs"],
-    image: "/myportfolio-website/VulnerabilityAssessmentTool.jpeg"
+    image: "/myportfolio-website/VulnerabilityAssessmentTool.jpeg",
+    url: "https://github.com/Maxamed-Maxamed"
   },
   {
     title: "Movie Web Application",
     description: "React-based movie browsing and rating app",
     tech: ["React", "Redux", "TMDB API"],
-    image: "/myportfolio-website/MovieApp.jpeg"
+    image: "/myportfolio-website/MovieApp.jpeg",
+    url: "https://github.com/Maxamed-Maxamed"
   },
   {
     title: "Real-Time Chat Application",
     description: "Secure messaging app with end-to-end encryption",
     tech: ["Socket.io", "React", "Node.js", "MongoDB"],
-    image: "/myportfolio-website/Chat.jpeg"
+    image: "/myportfolio-website/Chat.jpeg",
+    url: "https://github.com/Maxamed-Maxamed"
   },
   {
     title: "Portfolio Website",
     description: "Personal portfolio to showcase projects and skills",
     tech: ["HTML", "CSS", "JavaScript"],
-    image: "/myportfolio-website/notepad.jpeg"
+    image: "/myportfolio-website/notepad.jpeg",
+    url: "https://github.com/Maxamed-Maxamed"
   }
 ];
 
