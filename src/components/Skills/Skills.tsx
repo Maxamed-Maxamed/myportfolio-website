@@ -1,4 +1,4 @@
-import { Award, Code, User,  Briefcase, Phone, Server, Shield, Database, GitBranch, Layers, Cloud, } from 'lucide-react';
+import { Award, Code, User, Cpu, Briefcase, Phone, Server, Shield, Database, GitBranch, Layers, Cloud, } from 'lucide-react';
 
 import SkillCard from './SkillCard';
 
@@ -11,12 +11,12 @@ const skillsData = [
   {
     title: "Programming Languages",
     icon: <Code size={48} className="text-purple-500" />,
-    skills: ["Java", "Python", "JavaScript", "HTML/CSS", "Kotlin", "TypeScript"]
+    skills: ["Java", "Python", "JavaScript", "C#" , "HTML/CSS", "Kotlin", "TypeScript"]
   },
   {
     title: "Frameworks",
     icon: <Server size={48} className="text-red-500" />,
-    skills: ["React", "Next.js", "Vue.js", "FastAPI", "Nuxt.js", "React Native", "Express.js", "Django", "Flutter"]
+    skills: ["React", "Next.js", "Vue.js", ".NET Core", "FastAPI","MERN",  "React Native", "Express.js", "Django", "Spring Boot", "Spring MVC"]
   },
   {
     title: "Libraries",
@@ -26,7 +26,7 @@ const skillsData = [
   {
     title: "Mobile Development",
     icon: <Phone size={48} className="text-green-500" />,
-    skills: ["Android Studio", "Xcode"]
+    skills: ["Android Studio", "Flutter", "Xamarin", "Cordova", "Ionic", "React Native", "Xamarin.Forms"]
   },
   {
     title: "Design & Prototyping Tools",
@@ -72,8 +72,29 @@ const skillsData = [
     title: "Machine Learning & Data Science",
     icon: <Award size={48} className="text-red-500" />,
     skills: ["TensorFlow", "PyTorch", "Scikit-Learn", "Pandas", "Jupyter Notebooks"]
-  }
+  },
+// Add this to the skillsData array
+{
+  title: "AI & Distributed Training",
+  icon: <Cpu  size={48} className="text-emerald-500" />,
+  skills: [
+    "Large Language Models (LLMs)",
+    "Distributed Model Training",
+    "Neural Networks",
+    "Model Optimization",
+    "MLOps",
+    "Hugging Face Transformers",
+    "CUDA Programming",
+    "Distributed Computing Frameworks"
+  ]
+}
+
+
+  
+
 ];
+
+
 
 const Skills = () => {
   return (
