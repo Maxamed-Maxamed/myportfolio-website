@@ -118,7 +118,7 @@ const About = () => {
             </p>
             
             <p className="text-lg text-gray-600 text-justify">
-              As a fresh graduate eager to make my mark in the tech industry, I'm actively seeking opportunities where I can apply my skills and continue growing as a developer. I maintain an active presence in the tech community by contributing to open-source projects and developing personal applications that push my technical boundaries. I'm looking forward to joining a team where I can contribute my knowledge while learning from experienced professionals in building impactful solutions.
+              As a fresh graduate eager to make my mark in the tech industry, I'm actively seeking opportunities where I can develop my skills and continue growing as a developer. I maintain an active presence in the tech community by contributing to open-source projects and developing personal applications that push my technical boundaries. I'm looking forward to joining a team where I can contribute my knowledge while learning from experienced professionals in building impactful solutions.
             </p>
           </div>
         </div>
