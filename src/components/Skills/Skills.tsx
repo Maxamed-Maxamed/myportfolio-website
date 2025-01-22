@@ -1,114 +1,143 @@
-import { Award, Code, User, Cpu, Briefcase, Phone, Server, Shield, Database, GitBranch, Layers, Cloud, } from 'lucide-react';
+import React from 'react';
+import { 
+  Code, 
+  User, 
+  Cpu, 
+  Phone, 
+  Server, 
+  Database, 
+  GitBranch, 
+  Cloud 
+} from 'lucide-react';
 
 import SkillCard from './SkillCard';
+import { motion } from 'framer-motion';
 
-const skillsData = [
+const SKILLS_DATA = [
   {
     title: "Soft Skills",
     icon: <User size={48} className="text-blue-500" />,
-    skills: ["Team Collaboration & Communication", "Time Management & Prioritization", "Problem-solving & Critical Thinking"]
+    skills: ["Team Collaboration & Communication", "Time Management & Prioritization" ,"Problem-solving & Critical Thinking"]
   },
   {
     title: "Programming Languages",
     icon: <Code size={48} className="text-purple-500" />,
-    skills: ["Java", "Python", "JavaScript", "C#" , "HTML/CSS", "Kotlin", "TypeScript"]
+    skills: ["Python", "JavaScript", "TypeScript", "Java", "C#", "Kotlin"]
   },
   {
-    title: "Frameworks",
+    title: "Frameworks & Technologies",
     icon: <Server size={48} className="text-red-500" />,
-    skills: ["React", "Next.js", "Vue.js", ".NET Core", "FastAPI","MERN",  "React Native", "Express.js", "Django", "Spring Boot", "Spring MVC"]
-  },
-  {
-    title: "Libraries",
-    icon: <Layers size={48} className="text-orange-500" />,
-    skills: ["Node.js", "Vite.js", "NPM", "Webpack", "Tailwind CSS", "Material-UI (MUI)", "Electron.js"]
+    skills: ["React", "Next.js", "Vue.js", ".NET Core", "FastAPI","MERN",  "React Native", "Express.js", "Django", "Spring Boot" ]
   },
   {
     title: "Mobile Development",
     icon: <Phone size={48} className="text-green-500" />,
-    skills: ["Android Studio", "Flutter", "Xamarin", "Cordova", "Ionic", "React Native", "Xamarin.Forms"]
+    skills: ["React Native", "Flutter", "Android Studio"]
   },
   {
-    title: "Design & Prototyping Tools",
-    icon: <Award size={48} className="text-yellow-500" />,
-    skills: ["Figma", "Adobe XD", "Sketch (UI/UX Design)", "InVision (Prototyping)"]
+    title: "Cloud & DevOps",
+    icon: <Cloud size={48} className="text-purple-500" />,
+    skills: ["AWS", "Docker", "CI/CD", "GitHub Actions", "Kubernetes"]
   },
   {
     title: "Databases",
     icon: <Database size={48} className="text-indigo-500" />,
-    skills: ["SQL", "MySQL", "MongoDB", "Firebase", "PostgreSQL", "Microsoft Excel", "Microsoft Access"]
+    skills: ["MongoDB", "PostgreSQL", "Firebase", "SQL"]
   },
   {
-    title: "Tools & Platforms",
+    title: "AI & Machine Learning",
+    icon: <Cpu size={48} className="text-emerald-500" />,
+    skills: ["TensorFlow", "PyTorch", "MLOps", "LLMs", "NLP"]
+  },
+  {
+    title: "Development Tools",
     icon: <GitBranch size={48} className="text-orange-500" />,
-    skills: ["Git", "GitHub", "Docker", "AWS", "VS Code", "IntelliJ IDEA", "PyCharm IDE", "Postman API Platform"]
+    skills: ["Visual Studio", "VS Code", "Postman", "Figma", " Jupyter Notebook", "Android Studio", "IntelliJ IDEA", "PyCharm"]
   },
-  {
-    title: "Software Development",
-    icon: <Briefcase size={48} className="text-teal-500" />,
-    skills: ["Agile Methodologies", "Software Lifecycle Management", "Code Reviews", "CI/CD Pipelines", "GitHub Actions"]
-  },
-  {
-    title: "APIs & Web Services",
-    icon: <Server size={48} className="text-pink-500" />,
-    skills: ["GraphQL", "RESTful Services"]
-  },
-  {
-    title: "Testing Frameworks",
-    icon: <Shield size={48} className="text-cyan-500" />,
-    skills: ["Jest (JavaScript)", "Mocha (JavaScript)", "Chai (JavaScript)", "PyTest (Python)", "Selenium (Automated Testing)"]
-  },
-  {
-    title: "Cloud Services",
-    icon: <Cloud size={48} className="text-purple-500" />,
-    skills: ["AWS (EC2, S3, Lambda)", "GCP (Firestore, Compute Engine)", "Microsoft Azure (App Service, Cosmos DB)"]
-  },
-  {
-    title: "Security Practices",
-    icon: <Shield size={48} className="text-red-500" />,
-    skills: ["OAuth2", "JWT", "Secure Coding Practices", "Encryption", "Vulnerability Scanning (OWASP ZAP)"]
-  },
-  {
-    title: "Machine Learning & Data Science",
-    icon: <Award size={48} className="text-red-500" />,
-    skills: ["TensorFlow", "PyTorch", "Scikit-Learn", "Pandas", "Jupyter Notebooks"]
-  },
-// Add this to the skillsData array
-{
-  title: "AI & Distributed Training",
-  icon: <Cpu  size={48} className="text-emerald-500" />,
-  skills: [
-    "Large Language Models (LLMs)",
-    "Distributed Model Training",
-    "Neural Networks",
-    "Model Optimization",
-    "MLOps",
-    "Hugging Face Transformers",
-    "CUDA Programming",
-    "Distributed Computing Frameworks"
-  ]
-}
 
+  {
+    title: "Version Control",
+    icon: <GitBranch size={48} className="text-green-500" />,
+    skills: ["Git", "GitHub", "GitLab"]
+  }, 
 
+  {
+    title: "Operating Systems",
+    icon: <Server size={48} className="text-red-500" />,
+    skills: ["Windows", "Linux", "macOS"]
+  }
   
+  
+] as const;
 
-];
+const Skills: React.FC = () => {
+
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        delayChildren: 0.3,
+        staggerChildren: 0.1
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { y: 50, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        type: 'spring',
+        stiffness: 100
+      }
+    }
+  };
 
 
 
-const Skills = () => {
-  return (
-    <section id="skills" className="py-20 bg-white">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-8 text-center text-gray-800">Skills & Expertise</h2>
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {skillsData.map((skill, index) => (
-            <SkillCard key={index} {...skill} />
-          ))}
+    return (
+      <motion.section 
+        id="skills" 
+        className="py-20 bg-white relative overflow-hidden"
+        aria-labelledby="skills-heading"
+        initial="hidden"
+        animate="visible"
+        variants={containerVariants}
+      >
+        {/* Subtle Background Gradient */}
+        <div 
+          className="absolute inset-0 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 opacity-20 pointer-events-none"
+          aria-hidden="true"
+        />
+  
+        <div className="container mx-auto px-4 relative z-10">
+          <motion.h2 
+            id="skills-heading"
+            className="text-3xl font-bold mb-12 text-center text-gray-800"
+            variants={itemVariants}
+          >
+            Skills & Expertise
+          </motion.h2>
+          <motion.div 
+            className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8"
+            aria-description="A collection of skills across various technology domains"
+            variants={containerVariants}
+          >
+            {SKILLS_DATA.map((skill) => (
+              <motion.div 
+                key={skill.title} 
+                variants={itemVariants}
+              >
+                <SkillCard {...skill} />
+              </motion.div>
+            ))}
+          </motion.div>
         </div>
-      </div>
-    </section>
-  );
+      </motion.section>
+    );
 };
 
-export default Skills;
+export default React.memo(Skills);
