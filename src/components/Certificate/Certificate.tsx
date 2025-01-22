@@ -30,16 +30,16 @@ const Certificate: React.FC = () => {
     { 
       name: "AWS Certified Developer - Associate (In Progress)",
       issuer: "Amazon Web Services",
-      date: "Expected December 2024",
+      date: "Expected July 2025",
       logo: "/myportfolio-website/aws.png"
     },
 
-    {
-      name: "CompTIA Security+ (In Progress)",
-      issuer: "CompTIA",
-      date: "Expected January 2025",
-      logo: "/myportfolio-website/CompTIA Security+.png"
-    }
+    // {
+    //   name: "CompTIA Security+ (In Progress)",
+    //   issuer: "CompTIA",
+    //   date: "Expected January 2025",
+    //   logo: "/myportfolio-website/CompTIA Security+.png"
+    // }
    
   ];
 
