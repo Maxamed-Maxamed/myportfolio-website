@@ -7,7 +7,7 @@ import {
   Server, 
   Database, 
   GitBranch, 
-  Cloud 
+  Cloud, 
 } from 'lucide-react';
 
 import SkillCard from './SkillCard';
@@ -80,6 +80,7 @@ const Skills: React.FC = () => {
       transition: {
         delayChildren: 0.3,
         staggerChildren: 0.1
+
       }
     }
   };
@@ -130,9 +131,12 @@ const Skills: React.FC = () => {
               <motion.div 
                 key={skill.title} 
                 variants={itemVariants}
+               
               >
                 <SkillCard {...skill} />
+               
               </motion.div>
+              
             ))}
           </motion.div>
         </div>
